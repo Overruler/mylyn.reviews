@@ -229,8 +229,8 @@ public class ChangeInfo {
 			}
 			PermissionLabel label = new PermissionLabel();
 			label.setName(PermissionLabel.toLabelName(entry.getKey()));
-			label.setMin(Collections.min(values));
-			label.setMax(Collections.max(values));
+			label.setMin(Collections.min(values).intValue());
+			label.setMax(Collections.max(values).intValue());
 			result.add(label);
 		}
 		return result;
